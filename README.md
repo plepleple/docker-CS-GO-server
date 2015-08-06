@@ -1,2 +1,5 @@
 # docker-CS-GO-server
-Counter Strike: Global Offensive Dockerfile
+
+This repo contains Dokerfile of Counter Strike: Global Offensive. This is my first repository and Docker file :). 
+
+Enjoy. GL&HF
