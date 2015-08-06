@@ -1,11 +1,11 @@
 FROM ubuntu:15.04
 MAINTAINER Piotr "plepleple" Golan <piotr.golan@gmail.com>
 # System update and upgrade:
-RUN apt-get update && apt-get upgrade -y
+RUN apt-get update && apt-get -y upgrade
 # Install basic tools:
-RUN apt-get install mc wget -y
+RUN apt-get -y install mc wget 
 # Install SteamCMD dependences
-RUN apt-get install lib32gcc1 -y
+RUN apt-get -y install lib32gcc1
 # User
 RUN groupadd steam
 RUN useradd -m steam -g steam
