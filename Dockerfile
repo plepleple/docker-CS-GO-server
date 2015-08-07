@@ -15,4 +15,4 @@ RUN tar -xvzf steamcmd_linux.tar.gz -C /steamcmd
 # Install SteamCMD and CS:GO server
 RUN /steamcmd/steamcmd.sh +login anonymous +force_install_dir /steamcmd/csgoserver +app_update 740 validate +quit
 # Run basic server
-screen /steamcmd/csgoserver/srcds_run -game csgo -console -usercon +game_type 1 +game_mode 2 +mapgroup mg_allclassic +map de_dust2
+screen -d -m /steamcmd/csgoserver/srcds_run -game csgo -console -usercon +game_type 1 +game_mode 2 +mapgroup mg_allclassic +map de_dust2
