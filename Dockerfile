@@ -17,6 +17,6 @@ RUN wget https://steamcdn-a.akamaihd.net/client/installer/steamcmd_linux.tar.gz
 RUN tar -xvzf steamcmd_linux.tar.gz -C /steamcmd
 # Install SteamCMD and CS:GO server
 RUN /steamcmd/steamcmd.sh +login anonymous +force_install_dir /steamcmd/csgoserver +app_update 740 validate +quit
-# Folder privilages
+# Privilages
 RUN chown -R steamadmin:steamadmin /steamcmd
 RUN chmod -R 775 /steamcmd
